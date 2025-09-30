@@ -352,6 +352,12 @@ for example:
 kubectl create ingress my-ingress --class=nginx --rule='example.com/=nginx:80' --dry-run=client -o yaml
 ```
 
+#### Create ConfigMap
+
+```
+kubectl create configmap my-cm --from-literal=key=value --dry-run=client -o yaml > cm.yaml
+```
+
 ### Kubectl Run Dry Run
 
 For creating a pod
