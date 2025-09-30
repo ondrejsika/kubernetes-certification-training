@@ -229,3 +229,5 @@ Pod is not scheduled.
 - Check if there are any node name, node selectors or affinity rules that prevent scheduling.
 - Check if there are any taints on the nodes that prevent scheduling.
 - Check if there are enough resources in the cluster.
+
+## Save Time during the Exam
