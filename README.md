@@ -16,6 +16,34 @@
 - Proctoring: The exam is taken online with remote proctoring (via webcam and screen monitoring).
 - Passing score: 66% (approx. 40 out of 60 points).
 
+## Room & Screen Check Before the Exam
+
+### Room Check
+
+Before starting the exam, the proctor will ask you to:
+
+- Show your surroundings: Using your webcam, you’ll need to pan around the room to prove you’re alone and that no unauthorized materials (books, notes, whiteboards, extra monitors, phones) are accessible.
+- Desk check: You’ll be asked to show your desk surface, keyboard, mouse, and under the desk area.
+- Lighting: The room should be well-lit so the proctor can clearly see you.
+
+### Screen Check
+
+The proctor will also:
+
+- Monitor your screen: You must share your screen so the proctor sees everything you do.
+- No switching windows: Only the exam terminal and the allowed Kubernetes documentation (via browser tabs) can be open. Switching to other apps or screens can result in warnings or disqualification.
+- External monitors: If you have multiple monitors, all but one must be disconnected and powered off.
+
+### ID Verification
+
+You’ll need to show a government-issued photo ID (passport, driver’s license, etc.) to the camera for identity verification.
+
+### During the Exam
+
+- You must remain visible on webcam the whole time.
+- No leaving your seat (bathroom breaks are not allowed).
+- No headphones or smartwatches.
+
 ## Exam Environment
 
 - Linux virtual machine
