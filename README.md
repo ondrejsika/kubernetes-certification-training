@@ -255,6 +255,36 @@ journalctl -xe | less
 
 and then search with `/` key, for example `/api-server`. then navigate with `n` for next and `N` for previous match.
 
+## Debug Kubernetes Components
+
+```
+kubetl get po -n kube-system
+```
+
+If I cant connect to the API server, I can check if the kube-apiserver pod is running:
+
+```
+crictl ps -a | grep kube-apiserver
+```
+
+and then check its logs:
+
+```
+crictl logs <container-id>
+```
+
+If I cant see the containers on the node, I can check if the kubelet is running:
+
+```
+systemctl status kubelet
+```
+
+and then check its logs:
+
+```
+journalctl -xe | grep kubelet
+```
+
 ## Debug Pods
 
 1. check pod statuses
