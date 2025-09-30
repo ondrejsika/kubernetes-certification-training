@@ -4,9 +4,14 @@
 
 ## Prepare on killer.sh and killercoda.com
 
-- <https://killer.sh>
-- <https://killercoda.com/killer-shell-cka>
-- <https://killercoda.com/killer-shell-ckad>
+- <https://killer.sh> (paid)
+- <https://killercoda.com/killer-shell-cka> (free)
+- <https://killercoda.com/killer-shell-ckad> (free)
+
+### killer.sh pricing
+
+- CKA - $39 for 2x 36h of access to the exam environment
+- CKAD - $29 for 2x 36h of access to the exam environment
 
 ## Exam Format and Structure
 
