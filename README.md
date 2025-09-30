@@ -172,6 +172,32 @@ for example:
 journalctl -xe -u kubelet
 ```
 
+### systemctl
+
+Check status of a service
+
+```
+systemctl status <service-name>
+```
+
+especially useful for checking kubelet status:
+
+```
+systemctl status kubelet
+```
+
+restart a service
+
+```
+systemctl restart <service-name>
+```
+
+example:
+
+```
+systemctl restart kubelet
+```
+
 ## Logs
 
 Try to get logs from pods:
