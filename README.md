@@ -4,6 +4,18 @@
 
 ## CLI Tools
 
+### grep
+
+Filter output
+
+```
+kubectl get po -A | grep <keyword>
+```
+
+- `grep -A5 <keyword>` to show 5 lines after match (`A` stands for after)
+- `grep -B5 <keyword>` to show 5 lines before match (`B` stands for before)
+- `grep -C5 <keyword>` to show 5 lines before and after match (`C` stands for context)
+
 ## Logs
 
 Try to get logs from pods:
