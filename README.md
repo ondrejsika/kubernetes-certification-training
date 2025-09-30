@@ -340,6 +340,18 @@ kubectl create deployment nginx --image=nginx --dry-run=client -o yaml > d.yaml
 
 If you want to create a DaemonSet or StatefulSet, create a deployment first and then change the kind in the generated YAML file.
 
+#### Create Ingress
+
+```
+kubectl create ingress <name> --class=nginx --rule='<host>/=<service>:<port>' --dry-run=client -o yaml > ing.yaml
+```
+
+for example:
+
+```
+kubectl create ingress my-ingress --class=nginx --rule='example.com/=nginx:80' --dry-run=client -o yaml
+```
+
 ### Kubectl Run Dry Run
 
 For creating a pod
