@@ -2,6 +2,12 @@
 
 # kubernetes-certification-training
 
+## Prepare on killer.sh and killercoda.com
+
+- <https://killer.sh>
+- <https://killercoda.com/killer-shell-cka>
+- <https://killercoda.com/killer-shell-ckad>
+
 ## Vim
 
 Open file
