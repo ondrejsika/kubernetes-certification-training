@@ -21,6 +21,20 @@ kubectl get po -A | grep <keyword>
 - Search output with `/<keyword>`
 - Navigate with `n` for next and `N` for previous match
 
+### base64
+
+Encode plain text to base64:
+
+```
+echo -n 'hello' | base64
+```
+
+Decode base64 to plain text:
+
+```
+echo -n 'aGVsbG8=' | base64 -d
+```
+
 ## Logs
 
 Try to get logs from pods:
