@@ -534,3 +534,8 @@ kubectl expose deployment nginx --port=80 --dry-run=client -o yaml
 ## Q&A
 
 Ask me anything!
+
+## Contact: Ondrej Sika
+
+- email: <ondrej@sika.io>
+- linkedin: [/in/ondrejsika/](https://linkedin.com/in/ondrejsika/)
