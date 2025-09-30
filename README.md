@@ -8,6 +8,17 @@
 - <https://killercoda.com/killer-shell-cka>
 - <https://killercoda.com/killer-shell-ckad>
 
+## Exam Environment
+
+- Linux virtual machine
+  - access via RDP only (in browser, the Chrome is recommended)
+  - copy/paste works
+    - terminal - `CTRL+SHIFT+C`, `CTRL+SHIFT+V`
+    - browser - `CTRL+C`, `CTRL+V`
+- Questions / Task are solved in terminal with SSH to target node
+- Vim editor is available
+- alias `k` for `kubectl` is available
+
 ## Vim
 
 Open file
