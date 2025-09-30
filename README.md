@@ -2,6 +2,8 @@
 
 # kubernetes-certification-training
 
+## CLI Tools
+
 ## Logs
 
 Try to get logs from pods:
