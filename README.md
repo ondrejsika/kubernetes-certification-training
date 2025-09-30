@@ -270,6 +270,44 @@ for example:
 kubectl expose -h | grep -A5 'port'
 ```
 
+### Kubectl Get Output
+
+Basic output
+
+```
+kubectl get po
+```
+
+Wider output, more columns
+
+```
+kubectl get po -o wide
+```
+
+Only resource names
+
+```
+kubectl get po -o name
+```
+
+YAML
+
+```
+kubectl get po <pod-name> -o yaml
+```
+
+YAML to file
+
+```
+kubectl get po <pod-name> -o yaml > pod.yaml
+```
+
+Custom columns
+
+```
+kubectl get po -o custom-columns='NAME:.metadata.name,IMAGE:.spec.containers[0].image'
+```
+
 ### Kubectl Create
 
 List available resources to create
