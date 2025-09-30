@@ -308,6 +308,14 @@ Custom columns
 kubectl get po -o custom-columns='NAME:.metadata.name,IMAGE:.spec.containers[0].image'
 ```
 
+### Dry Run and Output to YAML
+
+You can use dry run to generate YAML files for various resources. Very useful during the exam.
+
+```
+kubectl <command> <resource> --dry-run=client -o yaml > file.yaml
+```
+
 ### Kubectl Create
 
 List available resources to create
