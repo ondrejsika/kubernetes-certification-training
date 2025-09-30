@@ -2,6 +2,88 @@
 
 # kubernetes-certification-training
 
+## Vim
+
+Open file
+
+```
+vim <file>
+```
+
+Write and quit
+
+```
+:wq
+```
+
+Quit without saving
+
+```
+:q!
+```
+
+Start editing
+
+```
+i
+```
+
+Exit editing
+
+```
+Esc
+```
+
+Open folfer
+
+```
+vim <folder>
+```
+
+then open file with selecting it and pressing `o`
+
+Search
+
+```
+/<keyword>
+```
+
+Delete line
+
+```
+dd
+```
+
+Go to end of the file
+
+```
+G
+```
+
+Delete from current line to end of the file
+
+```
+dG
+```
+
+Go to beginning of the file
+
+```
+gg
+```
+
+Delete from current line to beginning of the file
+
+```
+dgg
+```
+
+Go to line number
+
+```
+:<line-number>
+```
+
 ## CLI Tools
 
 ### grep
