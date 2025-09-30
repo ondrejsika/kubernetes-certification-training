@@ -35,6 +35,20 @@ Decode base64 to plain text:
 echo -n 'aGVsbG8=' | base64 -d
 ```
 
+### openssl
+
+Check Validity of TLS Certificate
+
+```
+openssl x509 -in <file.crt> -noout -text | grep -A2 'Validity'
+```
+
+for example:
+
+```
+openssl x509 -in /var/run/secrets/kubernetes.io/serviceaccount/ca.crt -noout -text | grep -A2 'Validity'
+```
+
 ## Logs
 
 Try to get logs from pods:
