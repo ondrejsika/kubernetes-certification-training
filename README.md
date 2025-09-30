@@ -359,3 +359,11 @@ For creating a pod
 ```
 kubectl run nginx --image=nginx --dry-run=client -o yaml > p.yaml
 ```
+
+### Kubectl Expose Dry Run
+
+For creating a service. The deployment must exist first.
+
+```
+kubectl expose deployment nginx --port=80 --dry-run=client -o yaml
+```
