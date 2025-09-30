@@ -16,6 +16,11 @@ kubectl get po -A | grep <keyword>
 - `grep -B5 <keyword>` to show 5 lines before match (`B` stands for before)
 - `grep -C5 <keyword>` to show 5 lines before and after match (`C` stands for context)
 
+### less
+
+- Search output with `/<keyword>`
+- Navigate with `n` for next and `N` for previous match
+
 ## Logs
 
 Try to get logs from pods:
