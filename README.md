@@ -269,3 +269,27 @@ for example:
 ```
 kubectl expose -h | grep -A5 'port'
 ```
+
+### Kubectl Create
+
+List available resources to create
+
+```
+kubectl create --help | less
+```
+
+or with head
+
+```
+kubectl create --help | head -n 40
+```
+
+### Kubectl Create Dry Run
+
+For creating a deployment
+
+```
+kubectl create deployment nginx --image=nginx --dry-run=client -o yaml > d.yaml
+```
+
+If you want to create a DaemonSet or StatefulSet, create a deployment first and then change the kind in the generated YAML file.
