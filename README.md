@@ -58,3 +58,45 @@ journalctl -xe | less
 ```
 
 and then search with `/` key, for example `/api-server`. then navigate with `n` for next and `N` for previous match.
+
+## Debug Pods
+
+1. check pod statuses
+
+```
+kubectl get po -A
+```
+
+2. check events in pod description
+
+```
+kubectl describe po -n <namespace> <pod-name>
+```
+
+3. check logs
+
+```
+kubectl logs -n <namespace> <pod-name>
+```
+
+## Common Pod Issues
+
+### CrashLoopBackOff
+
+Pod is crashing and restarting in a loop. Check logs to find out why.
+
+### ImagePullBackOff / ErrImagePull
+
+Pod cannot pull the image. Check if the image name is correct and if the image is available in the registry.
+
+### ContainerConfigurationError
+
+Check the description of the pod to find out more.
+
+### Pending
+
+Pod is not scheduled.
+
+- Check if there are any node name, node selectors or affinity rules that prevent scheduling.
+- Check if there are any taints on the nodes that prevent scheduling.
+- Check if there are enough resources in the cluster.
