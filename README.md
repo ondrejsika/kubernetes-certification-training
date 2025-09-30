@@ -231,3 +231,25 @@ Pod is not scheduled.
 - Check if there are enough resources in the cluster.
 
 ## Save Time during the Exam
+
+### Kubectl Help
+
+```
+kubectl <command> -h
+```
+
+with search
+
+```
+kubectl <command> -h | grep -A5 <keyword>
+```
+
+```
+kubectl <command> --help | less
+```
+
+for example:
+
+```
+kubectl expose -h | grep -A5 'port'
+```
