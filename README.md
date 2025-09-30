@@ -147,6 +147,31 @@ for example:
 openssl x509 -in /var/run/secrets/kubernetes.io/serviceaccount/ca.crt -noout -text | grep -A2 'Validity'
 ```
 
+### journalctl
+
+Show system logs
+
+```
+journalctl -xe
+```
+
+- `-x` for extra details
+- `-e` to jump to the end of the logs
+
+Show logs for specific service
+
+```
+journalctl -xe -u <service-name>
+```
+
+- `-u` for unit (service)
+
+for example:
+
+```
+journalctl -xe -u kubelet
+```
+
 ## Logs
 
 Try to get logs from pods:
