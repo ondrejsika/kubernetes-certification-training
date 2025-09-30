@@ -285,6 +285,24 @@ and then check its logs:
 journalctl -xe | grep kubelet
 ```
 
+### Configuration Files of Kubernetes Components
+
+#### kubelet configuration files
+
+Running as a systemd service
+
+```
+/var/lib/kubelet
+```
+
+### kube-apiserver, kube-controller-manager, kube-scheduler, etcd configuration files
+
+Running as static pods (containers managed directly by kubelet)
+
+```
+/etc/kubernetes/manifests
+```
+
 ## Debug Pods
 
 1. check pod statuses
