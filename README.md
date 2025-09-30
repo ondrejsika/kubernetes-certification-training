@@ -1,3 +1,60 @@
 [Ondrej Sika (sika.io)](https://sika.io) | <ondrej@sika.io>
 
 # kubernetes-certification-training
+
+## Logs
+
+Try to get logs from pods:
+
+```
+kubectl get pod -A
+```
+
+```
+kubectl logs -n <namespace> <pod-name>
+```
+
+Try to get logs from containers:
+
+```
+crictl ps -a
+```
+
+```
+crictl logs <container-id>
+```
+
+Try to get sytem logs:
+
+```
+journalctl -xe
+```
+
+You can also check log files directly:
+
+- `/var/log/pods`
+- `/var/log/containers`
+- `/var/log/syslog`
+
+
+## Filter logs
+
+Using grep
+
+```
+journalctl -xe | grep <keyword>
+```
+
+for example:
+
+```
+journalctl -xe | grep api-server
+```
+
+or search with less
+
+```
+journalctl -xe | less
+```
+
+and then search with `/` key, for example `/api-server`. then navigate with `n` for next and `N` for previous match.
