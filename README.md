@@ -293,3 +293,11 @@ kubectl create deployment nginx --image=nginx --dry-run=client -o yaml > d.yaml
 ```
 
 If you want to create a DaemonSet or StatefulSet, create a deployment first and then change the kind in the generated YAML file.
+
+### Kubectl Run Dry Run
+
+For creating a pod
+
+```
+kubectl run nginx --image=nginx --dry-run=client -o yaml > p.yaml
+```
