@@ -103,6 +103,22 @@ kubectl get po -A | grep <keyword>
 - Search output with `/<keyword>`
 - Navigate with `n` for next and `N` for previous match
 
+### head
+
+Show first lines of output
+
+```
+kubectl create --help | head -n 40
+```
+
+### tail
+
+Show last lines of output
+
+```
+kubectl logs -n <namespace> <pod-name> | tail -n 10
+```
+
 ### base64
 
 Encode plain text to base64:
