@@ -8,6 +8,14 @@
 - <https://killercoda.com/killer-shell-cka>
 - <https://killercoda.com/killer-shell-ckad>
 
+## Exam Format and Structure
+
+- Duration: 2 hours.
+- Number of tasks: Typically 15–20 practical problems (cca 6mins / task).
+- Environment: You work in a real Kubernetes cluster using the command line.
+- Proctoring: The exam is taken online with remote proctoring (via webcam and screen monitoring).
+- Passing score: 66% (approx. 40 out of 60 points).
+
 ## Exam Environment
 
 - Linux virtual machine
